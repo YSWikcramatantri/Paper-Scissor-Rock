@@ -13,6 +13,21 @@
 <body>
 
     <div id="container">
+        <div id="summary">
+            <div class="top">
+                <div class="player">
+                    <p class="pl-po-l">Your Points</p>
+                    <p id="player" class="plpo">0</p>
+                </div>
+                <div class="computer">
+                    <p class="co-po-l">Computer Points</p>
+                    <p id="computer" class="copo">0</p>
+                </div>
+            </div>
+            <div class="description">
+                <p id="description">Start game by pressing buttons !</p>
+            </div>
+        </div>
         <div id="pp">
             <button id="paper" class="p pap"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="100" height="100"
@@ -27,19 +42,22 @@
                 viewBox="0 0 172 172"
                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ecf0f1"><path d="M82.78844,27.305c-3.14437,0 -6.46344,0.9675 -9.20469,3.1175c-1.16906,0.94063 -2.17687,2.16344 -2.98312,3.56094c-2.56656,-2.01562 -5.64375,-3.02344 -8.66719,-3.02344c-3.225,0 -6.51719,1.10188 -9.19125,3.35938c-2.66062,2.24406 -4.56875,5.81844 -4.56875,10.06469v6.18125c0,0.08062 0.01344,0.16125 0.01344,0.24187l0.08062,21.43281c-5.84531,2.40531 -13.85406,10.4275 -13.85406,23.83813c0,7.91469 3.07719,14.7275 3.42656,15.76219l9.98406,18.92c5.16,10.66937 15.81594,17.2 27.52,17.2h31.29594c17.2,0 30.96,-13.76 30.96,-30.96v-61.92c0,-15.13063 -8.6,-17.2 -13.76,-17.2c-2.40531,0 -5.16,0.33594 -7.91469,2.40531c-2.40531,-7.56531 -7.91469,-9.28531 -12.72531,-9.28531c-3.69531,0 -6.71875,0.99437 -8.78812,2.64719c-0.68531,-1.10187 -1.46469,-2.12312 -2.39188,-2.92937c-2.66062,-2.31125 -5.99312,-3.41313 -9.23156,-3.41313zM82.56,34.44031c5.16,0 6.88,4.12531 6.88,6.88v10.32c0,2.06937 1.37063,3.44 3.44,3.44c2.06938,0 3.44,-1.37063 3.44,-3.44v-6.88c0,-3.09063 1.03469,-6.88 6.88,-6.88c3.44,0 6.88,0.68531 6.88,10.32v6.88c0,2.06937 1.37063,3.44 3.44,3.44c2.06938,0 3.44,-1.37063 3.44,-3.44c0,-8.94938 3.44,-10.32 6.88,-10.32c3.44,0 6.88,1.37062 6.88,10.32v61.92c0,13.41062 -10.66937,24.08 -24.08,24.08h-31.29594c-9.29875,0 -17.54938,-5.16 -21.68813,-13.42406l-9.62125,-19.25594c-1.03469,-2.06938 -2.74125,-7.51156 -2.74125,-12.67156c0,-13.76 10.30656,-16.91781 10.6425,-16.91781c1.38406,-0.33594 3.1175,-1.65281 3.1175,-3.37281l-0.02687,-24.36219c0.02687,-0.17469 0.04031,-0.33594 0.02687,-0.51062v-6.18125c0,-2.31125 0.84656,-3.72219 2.13656,-4.82406c1.30344,-1.10187 3.15781,-1.72 4.74344,-1.72c1.59906,0 3.42656,0.61813 4.71656,1.73344c1.29,1.11531 2.16344,2.62031 2.16344,5.14656v5.84531c-0.01344,1.23625 0.645,2.39187 1.70656,3.02344c1.075,0.61813 2.40531,0.61813 3.48031,0c1.06156,-0.63156 1.72,-1.78719 1.69312,-3.02344v-9.51375c0.1075,-2.74125 1.86781,-6.61125 6.86656,-6.61125z"></path></g></g></svg></button>
         </div>
-        <div id="summary">
-            <div class="top">
-                <div class="player"></div>
-                <div class="computer"></div>
-            </div>
-            <div class="description">
-                <p id="description">Start game by using buttons on your left!</p>
-            </div>
-        </div>
+        
     </div>
     <footer>
         <p>&COPY; Yowun Sajeewana Wickrmatantri 2022</p>
     </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" id="modal-header">
+            </div>
+            <div class="modal-body">
+              <p class="modal-message" id="modal-message">Horray! You won the Game! &#128525;</p>
+              <button class="play-again" id="play-again">Play Again</button>
+            </div>
+          </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
