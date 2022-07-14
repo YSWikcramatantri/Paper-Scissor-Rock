@@ -3,6 +3,12 @@ const scissors = document.querySelector('#scissors');
 const rock = document.querySelector('#rock');
 const description = document.querySelector('#description');
 
+var modal = document.getElementById("modal");
+var mheader = document.getElementById("modal-header");
+var mmessage = document.getElementById("modal-message");
+
+var playAgain = document.getElementById("play-again");
+
 var playerSelection;
 var x;
 var playerPoints = 0;
@@ -27,6 +33,7 @@ function computerPlay() {
     return y;
 }
 function playRound() {
+
     var computerSelection = computerPlay();
     if (playerSelection == "rock") {
         if (computerSelection == "paper") {
@@ -68,6 +75,21 @@ function playRound() {
         }
     }
     document.getElementById("description").innerHTML = x;
+    document.getElementById("player").innerHTML = playerPoints;
+    document.getElementById("computer").innerHTML = computerPoints;
+
+    if (playerPoints == 5) {
+        modal.style.display = "block";
+    }
+    if (computerPoints == 5) {
+        mheader.style.backgroundColor = "#c76868";
+        mmessage.innerHTML = "Ah! You lost the Game! &#128531;"
+        modal.style.display = "block";
+    }
 }
 
+playAgain.onclick = function() {
+    location.reload();
+  }
+  
 
